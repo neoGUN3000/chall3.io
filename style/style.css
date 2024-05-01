@@ -45,7 +45,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(2, 27vw);
-    grid-template-rows: minmax(40vh, 76vh);
+    grid-template-rows: minmax(35vh, 74vh);
     grid-auto-flow: row;
     margin-top: 15vh;
     overflow: visible;
@@ -391,25 +391,32 @@ body {
 
 
 
-@media screen and (max-width:1690px) and (min-width:1200px){
+@media screen and (max-width:1700px) and (min-width:1400px){
     body{
         
     }
     .test-box {
        
-        grid-template-rows:  minmax(40vh, 65vh);
+        grid-template-rows:  minmax(45vh, 65vh);
+        grid-template-columns: repeat(2, 27vw);
     }
 
     .grid-table>tbody{
   
         grid-template-columns: 20vw;
         grid-template-rows: repeat(4, minmax(5vh, 6vh));
-      margin-top: -10% ;
+      
     }
     .btn{
-        height: 5vh;
-     
-        
+       
+        height: 6vh;  
+    }
+    .result-box__title{
+        font-size: 1.7vw;
+        margin: 8% 10%;
+    }
+    .great{
+        margin-top: 7%;
     }
     
 
@@ -418,23 +425,74 @@ body {
 @media screen and (max-width:1400px) and (min-width:1300px) {
    .result-box__title{
     font-size: 150%;
+
    } 
    .header-text{
-    margin-top: -6%;
+    margin-top: -3%;
    }
-   .grid-table{
-    margin-top: -20%;
-    margin-bottom: 0px;
+   .grid-table>tbody{
+    display: grid;
+    margin-top: 1%;
+    gap: 12%;
    }
    .btn{
     position:absolute ;
-    top: 50%;
+    height: 7vh;
+    bottom: 6%;
    }
    .test-box{
-    grid-template-rows:  minmax(35vh, 59vh);
+    grid-template-rows:  minmax(50vh, 60vh);
+   }
+   .row{
+    height: 6vh;
+   }
+   .result-box__title{
+    margin: 15% 10%;
+   }
+   .great{
+    margin-top: 10%;
    }
 }
 
-@media screen and (max-width:1200px) and (min-width:1000px){
+@media screen and (max-width:1300px) and (min-width:1170px){
+    .test-box{
+        grid-template-rows:  minmax(40vh, 100vh);
+        grid-template-columns: repeat(2, 35vw);
+        }
+        
+        .grid-table>tbody{
+            grid-template-rows: repeat(4, 6.5vh);
+         margin: auto;
+         
+        }
+        .row{
+            width: 24vw;
+            
+        }
+        .row__cage:nth-child(1){
+            font-size: 1.8vw;
+        }
+     
+        .btn{
+            bottom: 6%;
+            left: 22%;
+            width: 24vw;
+        }
+        .great{
+            font-size: 3.5vw;
+            margin-top: 10%;
+
+        }
+        .result-box__title{
+            font-size: 2.1vw;
+            margin: 10% 10%;
+        }
+        .header-text{
+            margin: -1% 7%;
+        }
+}
+
+@media screen and (max-width:1170px) and (min-width:800px){
+    
 
 }
