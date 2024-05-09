@@ -6,24 +6,286 @@
     font-display: swap;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    font-family: Hanken;
+    display:flex;
+    justify-content: center;
+   
+}
+
+
+.test-box{
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    grid-template-rows: auto;
+    margin: 0%;
+ 
+}
+
+
+
+
+
+.result-section .summary-section{
+  
+}
+
+
+
+
+
+
+
+                /* CОЗДАНИЕ ДВУХ СЕКЦИЙ КОНТЕНТА  В НУТРИ БОКСА  TEST-BOX */
+/* ______________________________________________________________________________________________________________________________ */
+.result-section{
+    background-color: rgb(62, 62, 247);
+    border-radius: 30px;
+    height:auto;
+    max-height: 80vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    justify-items: center;
+    position: relative;
+    left: 85px;
+}
+.summary-section{
+   background-color: rgba(247, 243, 243, 0.76);
+    z-index: 0;
+    position: relative;
+    left: 5px;
+    width: 85%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+
+
+
+
+
+                                        /* квадратный бокс с кругом в нутри \ */
+/* ___________________________________________________________________________________________________________________________________________ */
+
+
+
+.circl-of-value{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: linear-gradient(to top, rgba(75, 84, 243, 255), rgba(56, 47, 236, 255));
+    box-shadow: inset 10px 170px 120px -110px rgba(40, 16, 237, 255);
+    color: rgba(134, 121, 255, 255);
+    padding: 5%;
+}
+.box-circl>.circl-of-value>strong{
+    font-size: 60px;
+    color: rgb(252, 252, 252); 
+}
+.box-circl>.circl-of-value>span{
+    color: rgb(177, 188, 197);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.box-circl{
+    width: 176px;
+    height:176px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                    /* стилизация текстового контента в блоке SUMMARY-SECTION */
+
+/* _________________________________________________________________________________________________________________ */
+
+.great{
+  font-size: 30px;
+  font-weight: 900;
+  position: relative;
+  top: 32px;
+  color: rgb(226, 226, 207);
+}
+.result-section>p{
+    font-size: 17px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 36px 30px 34px 30px;
+    color: rgb(188, 202, 202);
+    line-height: 1.1;
+}
+.line__header{
+    text-align: center;
+    margin: 35px auto;
+    font-weight: 600;
+}
+.result-section>.line__header{
+color: rgb(195, 209, 209);
+font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* позиционирование бокса с таблицей и создание рядов с елементами В БОКСЕ SUMMARY-SECTION*/
+/* _______________________________________________________________________________________________________________________________________ */
+.grid-table{
+    position: relative;
+    top: -40px;
+    left: 15px;
+}
+
+.grid-body{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6,auto);
+    gap: 15px;
+
+}
+.grid-body__row{
+    border-radius: 10px;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px; 
+}
+
+
+
+
+                            /* позиционирование внутренних элементов ряда И САМИХ РЯДОВ */
+/* __________________________________________________________________________________________________________________________________________ */
+
+
+.grid-body__row>th{
+    position: relative;
+}
+.grid-body__row>th:nth-child(1){
+left:-15px;
+}
+.grid-body__row>th:nth-child(2){
+    left: -30px;
+}
+.grid-body__row>th:nth-child(3){
+    left: 35px;
+    color: rgb(10, 10, 104);
+    font-weight: 700;
+    font-size: 16px;
+}
+.grid-body__row>th:nth-child(4){
+    right: -15px;
+    color: rgb(145, 157, 167);
+
+}
+.grid-body>tr:first-child{
+    position: relative;
+    right:85px;
+    top: 25px;
+    font-size: 20px;
+}
+.grid-body>.grid-body__row>th>.btn{
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(47, 55, 100);
+    color: aliceblue;
+    font-size: 16px;
+    margin-top: 40px;
+    transition: all .8s ease;
+    
+}
+.grid-body>.grid-body__row>th>.btn:hover{
+    background-color: rgb(21, 21, 197);
+    transform: scale(1.04);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ЦВЕТОВЫЕ КЛАССЫ ДЛЯ РЯДОВ В СЕКЦИИ SUMMARY-SECTION */
+/* _______________________________________________________________________________________________________________________________________________________________ */
 .light-red {
     color: hsl(0, 100%, 67%);
-    background-color: hsla(0, 100%, 67%, 0.116);
+    background-color: hsla(0, 100%, 67%, 0.096);
 }
 
 .Orangey-yellow {
     color: hsl(39, 100%, 56%);
-    background-color: hsla(39, 100%, 56%, 0.11);
+    background-color: hsla(39, 100%, 56%, 0.075);
 }
 
 .Green-teal {
     color: hsl(166, 100%, 37%);
-    background-color: hsla(166, 100%, 37%, 0.116);
+    background-color: hsla(166, 100%, 37%, 0.075);
 }
 
 .Cobalt-blue {
     color: hsl(234, 85%, 45%);
-    background-color: hsla(234, 85%, 45%, 0.137);
+    background-color: hsla(234, 85%, 45%, 0.082);
 }
 
 .Light-blue {
@@ -32,768 +294,3 @@
 }
 
 
-body {
-    font-family: Hanken;
-    display: flex;
-    justify-content: center;
-    
-
-
-}
-
-.test-box {
-
-
-    display: grid;
-    grid-template-columns: repeat(2, 27vw);
-    grid-template-rows: minmax(35vh, 74vh);
-    grid-auto-flow: row;
-    margin-top: 15vh;
-    overflow: visible;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-.your-result-box {
-    /* background: linear-gradient(to bottom, #070238, #4746a5); */
-    background-color: rgb(30, 30, 250);
-    border-radius: 50px;
-    z-index: 1;
-    overflow: hidden;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.summary {
-    background-color: rgb(252, 246, 238);
-    z-index: 0;
-    position: relative;
-    left: -30px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.box__header {
-    text-align: center;
-    font-size: 2em;
-    margin: 10%;
-    color: rgb(176, 194, 194);
-    font-weight: 600;
-}
-
-.box_value {
-
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: linear-gradient(to top, rgba(75, 54, 243, 255), rgba(56, 47, 236, 255));
-    box-shadow: inset 10px 170px 120px -40px rgba(40, 16, 237, 255);
-
-    color: rgba(134, 121, 255, 255);
-    margin: auto;
-}
-
-
-.box_value>strong {
-    font-size: 5vw;
-    color: azure;
-    margin: 10% 10% 20% 7%;
-}
-
-.box_value>strong::before {
-    content: 'of 100';
-    font-size: 1.4vw;
-    position: relative;
-    top: 40px;
-    left: 45%;
-    color: rgba(255, 235, 205, 0.466);
-}
-
-.great {
-    font-size: 2.4vw;
-    display: block;
-    text-align: center;
-    margin: 7% 8%;
-    color: rgb(230, 230, 220);
-}
-
-.result-box__title {
-    text-align: center;
-    font-size: 1.3vw;
-    margin: 10% 60px;
-    color: antiquewhite;
-    line-height: 110%;
-}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.grid-table>tbody {
-    display: grid;
-    grid-template-columns: 20vw;
-    grid-template-rows: repeat(4, minmax(5vh, 8vh));
-    width: 100%;
-    gap: 25px;
-    margin: 0% 0% 16% 4%;
-
-}
-
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 13px;
-    transition: all 400ms ease-in-out;
-
-}
-
-
-.row__cage:nth-child(1) {
-    font-size: 1.3vw;
-    margin-right: 60%;
-}
-
-.row__cage>strong {
-    color: rgb(9, 9, 71);
-    font-size: 1.3vw;
-    position: absolute;
-    right: 15%;
-}
-
-.row__cage>:nth-child(2)::after {
-    content: '/100';
-    color: rgba(128, 128, 112, 0.822);
-    font-size: 1.3vw;
-    position: relative;
-    right: -7%;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.row1:before {
-    content: url(/images/reaction.svg);
-
-}
-
-.row2::before {
-    content: url(/images/brain.svg);
-
-}
-
-.row3::before {
-    content: url(/images/verbal.svg);
-
-}
-
-.row4::before {
-    content: url(/images/visual.svg);
-
-}
-.row:hover{
-    transform: scale(1.1);
-}
-
-
-
-
-
-
-
-
-
-.btn {
-    align-self: flex-end;
-    position: absolute;
-    bottom: 13%;
-    right: 10%;
-    background-color: rgb(66, 66, 109);
-    width: 20vw;
-    height: 8vh;
-    border-radius: 40px;
-    font-size: 24px;
-    font-weight: 600;
-    color: aliceblue;
-    transition: all 500ms ease-in-out;
-    transition: all 400ms ease-in;
-}
-
-.btn:hover {
-    background-color: blue;
-    transform:scale(1.1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header-text {
-    align-self: flex-start;
-    position: absolute;
-    font-size: 2vw;
-    font-weight: 900;
-    top: 10%;
-    left: 16%;
-}
-
-
-
-
-@media screen and (max-width:2210px) and (min-width:1850px){
-
-    .test-box {
-       
-        grid-template-rows: minmax(83vh, 85vh);
-        margin-top: 4%;
-    }
-    .result-box__title{
-        position: relative;
-        bottom: 3px;
-        top: -1px;
-       font-size: 230%;
-    }
-    .btn{
-        bottom: 10%;
-    }
-    .row{
-        height: 9vh;
-    }
-    .grid-table>tbody{
-        gap: 22%;
-        margin-top: -20%;
-    }
-
-}
-@media screen and (max-width:1850px) and (min-width:1700px){
-
-    .btn{
-        bottom:10%;
-    }
-    .result-box__title{
-        font-size: 1.6vw;
-    }
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1700px) and (min-width:1400px){
-    body{
-        
-    }
-    .test-box {
-       
-        grid-template-rows:  minmax(63vh, 68vh);
-        grid-template-columns: repeat(2, 27vw);
-    }
-
-    .grid-table>tbody{
-  
-        grid-template-columns: 20vw;
-        grid-template-rows: repeat(4, minmax(5vh, 6vh));
-      
-    }
-    .btn{
-       
-        height: 6.5vh;  
-    }
-    .result-box__title{
-        font-size: 1.7vw;
-        margin: 8% 10%;
-        position: relative;
-        bottom: -5%;
-    }
-    .great{
-        margin-top: 7%;
-    }
-    
-
-}
-
-@media screen and (max-width:1400px) and (min-width:1300px) {
-   .result-box__title{
-    font-size: 150%;
-
-   } 
-   .header-text{
-    margin: -3% 0% 0% 3%;
-    font-size: 2.1vw;
-   }
-   .grid-table>tbody{
-    display: grid;
-    margin: -25% 0% 0% 0%;
-    gap: 14%;
-
-   }
-   .btn{
-    position:absolute ;
-    height: 7vh;
-    bottom: 7%;
-    right: 12%;
-    width: 70%;
-   }
-   .test-box{
-    grid-template-rows:  minmax(60vh, 65vh);
-    grid-template-columns: repeat(2, 32vw);
- 
-   }
-   .row{
-    height: 7vh;
-    width: 22vw;
-    
-   }
-   .result-box__title{
-    position: relative;
-    margin: 15% 5%;
-    bottom: 1%;
-    font-size: 1.9vw;
-   }
-   .great{
-    margin-top: 10%;
-   }
-
-}
-
-@media screen and (max-width:1300px) and (min-width:1170px){
-    .test-box{
-        grid-template-rows:  minmax(65vh, 70vh);
-        grid-template-columns: repeat(2, 35vw);
-        }
-        
-        .grid-table>tbody{
-            grid-template-rows: repeat(4, 6.5vh);
-             margin: -35% 0% 0% -4%;
-         
-        }
-        .row{
-            width: 24vw;
-            height: 7vh;
-            
-        }
-        .row__cage:nth-child(1){
-            font-size: 1.8vw;
-        }
-     
-        .btn{
-            bottom: 10%;
-            left: 19%;
-            width: 24vw;
-        }
-        .great{
-            font-size: 3.5vw;
-            margin-top: 10%;
-
-        }
-        .result-box__title{
-            font-size: 2.1vw;
-            margin: 10% 10%;
-        }
-        .header-text{
-            margin: -3% 7%;
-            font-size: 2.5vw;
-        }
-        .box_value {
-
-            width: 20vw;
-            height: 20vw;
-          
-        }
-        
-        
-        .box_value>strong {
-            font-size: 5vw;
-            color: azure;
-            margin: 10% 10% 20% 10%;
-        }
-        
-        .box_value>strong::before {
-          
-            font-size: 1.9vw;
-  
-        }
-  
-}
-
-@media screen and (max-width:1170px) and (min-width:809px){
-    .test-box{
-        grid-template-columns: repeat(2, minmax(35vw, 40vw));
-        grid-template-rows: repeat(2,  minmax(67vh, 70vh));
-
-    }
-
-      .box_value {
-
-            width: 22vw;
-            height: 22vw;
-          margin-top: 15px;
-        }
-        
-        
-        .box_value>strong {
-            font-size: 6vw;
-            color: azure;
-            margin: 10% 1% 20% 10%;
-        }
-        
-        .box_value>strong::before {
-          
-            font-size: 2vw;
-  
-        }
-        .great{
-            margin-top: 45px;
-            font-size: 36px;
-        }
-        .result-box__title{
-            font-size: 25px;
-            margin: 30px 10px 20px 0px;
-            padding: 5%;
-        
-        }
-        .header-text{
-            font-size:3vw ;
-            margin:-7% 0% 0% 6% ;
-          
-
-        }
-        .row{
-            height: 7vh;
-            width: 27vw;
-            padding: 5px;
-
-        }
-        .grid-table>tbody{
-            gap: 12%;
-            margin: -200px -10% ;
-           
-          
-        }
-        .row__cage:nth-child(1){
-            font-size: 2.2vw;
-            margin-left: 2%;
-        }
-      .row__cage>strong{
-        font-size: 2vw;
-        margin-right: 2%;
-      }
-      .row__cage>:nth-child(2)::after {
-        content: '/100';
-        color: rgba(128, 128, 112, 0.822);
-        font-size: 2vw;
-    
-    }
-    .btn{
-        width: 28vw;
-     bottom: 13%;
-    }
-}
-
-@media screen and (max-width:930px) and (min-width:809px){
-    .test-box{
-        grid-template-rows: repeat(2, 60vh );
-    }
-}
-
-@media screen and (max-width:809px) {
-    body{
-        overflow: scroll;
-    }
-    .test-box{
-        display: flex;
-        flex-direction:column;
-        margin: 0%;
-        height:100vh;
-        width: 100vw;
-        background-color: blue;
-    }
-    .your-result-box{
-        
-        border-top-left-radius: 0%;
-        border-top-right-radius: 0%;
-        z-index: 1;
-        position: relative;
-        height: 375%;
-        margin-top: -30px;
-        width: 100%;
-
-       
-    }
-    .summary{
-        position:relative;
-        left: 0;
-        bottom: 80px;
-        height: 4700px;
-        margin-bottom: -540px;
-        z-index: 0;
-    }
-    .box__header{
-        position: relative;
-        top: 4px;
-        font-size: 5.3vw;
-    }
-    .box_value {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        margin: -50px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-    .box_value>strong {
-        font-size: 11vw;
-        margin: 0% 0% 0% -25%;
-    }
-    
-    .box_value>strong::before {
-        font-size: 30%;
-        position: relative;
-        top: 45px;
-        left: 46%; 
-    }
-    .great{
-        font-size: 6vw;
-        margin-top: 13%;
-    }
-    .result-box__title{
-        font-size: 250%;
-        /* margin:10% 5%; */
-        position: relative;
-        bottom: -10px;
-
-    }
-    .box__header{
-        font-size: 300%;
-    }
-    .grid-table>tbody{
-        margin: auto -110% ;
-        position: relative;
-        top: 15px;
-        gap: 50px;
-    }
-    .row{
-        width:65vw;
-        height: 10vh;
-
-    }
-    .row__cage:nth-child(1){
-        font-size: 4vw;
-    }
-    .row__cage:nth-child(2){
-        font-size: 115vw;
-    }
-    .row__cage>:nth-child(2)::after {
-     
-        font-size: 4vw;
-        left: 10px;
-    
-    }
-    .row__cage>strong{
-        font-size: 4vw;
-        margin-right: -212%;
-      }
-      .header-text{
-        font-size: 4vw;
-        margin: 8% 3% ;
-      }
-      .btn{
-        bottom: 30px;
-        width: 65vw;
-        left: 18%;
-        height: 9vh;
-      }
- 
-}
-@media screen and (max-width:600px){
-    .box__header{
-        font-size: 5vw;
-        margin-top: 20%;
-    }
-    .box_value {
-        width: 230px;
-        height: 230px;
-        margin-top: 10%;
- 
-    }
-    
-    .box_value>strong {
-        font-size: 70px;
-        margin: -10% 0% 0% -25%;
-    }
-    
- .great{
-    margin-top: 90px;
-    font-size: 44px;
- }
- .result-box__title{
-    margin:90px 10px;
-    font-size: 5vw;
- }
- .header-text{
-    font-size: 7vw;
-    margin: 5% 20%;
- }
- .grid-table>tbody{
-    gap: 20%;
- position: relative;
- top: -60px;
- }
- .row{
-    height: 8vh;
- }
- .btn{
-    bottom: 90px;
- }
- 
-}

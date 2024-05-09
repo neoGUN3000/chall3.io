@@ -5,56 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/reset.css">
+    
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/medea.css">
     <title> Results summary component</title>
 </head>
 <body>
 
 <div class="test-box">
-    <section class="your-result-box">
-        <h2 class="box__header">Your Result</h2>
-       <div class="box_value"><strong>76 </strong></div>
-       <strong class="great">Great</strong>
-        <p class="result-box__title">You scored higher than 65%  of the people who have taken these tests.</p>
-   
-    </section>
-
-    <section class="summary">
-        <h2 class="header-text ">Summary </h2>
-        <table class="grid-table">
-      <tbody>
-         <tr class="row row1  light-red ">
-            <th class=" row__cage"><span>Reaction</span><strong>80</strong></th>
-          </tr>
-          <tr class="row row2  Orangey-yellow">
-            <th class="row__cage"><span>Memory</span> <strong>92</strong></th>
-          </tr>
-          <tr class="row row3  Green-teal">
-            <th class="row__cage"><span>Verbal</span> <strong>61</strong></th>
-          </tr>
-          <tr class="row row4  Light-blue">
-            <th class="row__cage"><span>Visual</span> <strong>72</strong></th>
-          </tr>
+   <section class="result-section">
+   <h2 class="line__header">Your Result</h2>
+  <div class="box-circl">
+        <div class="circl-of-value">
+        <strong>
+         76
+        </strong>
+        <span>
+        of 100
+        </span>
+       
+    </div>
+  </div>
+<h3 class="great">
+    Great
+</h3>
+<p>You scored higher than 65%  of the people who have taken these tests.</p>
+ 
+   </section>
+   <section class="summary-section">
+  <table class="grid-table">
+    <tbody class="grid-body">
+        <tr class="line__header">
+            <th>Summary</th>
+        </tr>
+        <tr class="grid-body__row light-red">
+            <th><img src="images/reaction.svg" alt="icon"></th>
+            <th>Reaction</th>
+            <th>80</th>
+            <th>/100</th>
+        </tr>
+        <tr class="grid-body__row Orangey-yellow ">
+            <th><img src="images/brain.svg" alt="icon"></th>
+            <th>Memory</th>
+            <th>92</th>
+            <th>/100</th>
+        </tr>
+        <tr class="grid-body__row Green-teal">
+            <th><img src="images/verbal.svg" alt="icon"></th>
+            <th>Verbal</th>
+            <th>61</th>
+            <th>/100</th>
+        </tr>
+        <tr class="grid-body__row Cobalt-blue">
+            <th><img src="images/visual.svg" alt="icon"></th>
+            <th>Visual</th>
+            <th>72</th>
+            <th>/100</th>
+        </tr>
+        <tr class="grid-body__row">
+            <th><button class="btn" type="button">Continue</button></th>
+        
+        </tr>
+    </tbody>
+  </table>
+   </section>
     
-      </tbody>
-        </table>
-
+       
 
     
-        <button class="btn" type="button">Continue</button>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
